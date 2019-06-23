@@ -1,0 +1,79 @@
+ul {
+    list-style-type: none;
+  }
+
+body {
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  }
+  
+  .wrapper {
+    padding: 1rem;
+  }
+  
+.filter-by-rating
+{
+  //position: relative;
+  left: 4em
+}
+
+
+  
+  .column__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: .5rem;
+    align-items: start;    
+  }
+  
+  .column__item {
+    border-radius: .2rem;
+    background-color: #ffffff;
+    padding: .5rem;
+  }
+    
+  .card__list {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: .5rem;
+    margin: .5rem 0;
+  }
+  
+  .card__item {
+    background-color: white;
+    border-radius: .25rem;
+    box-shadow: 0 1px 0 rgba(9,45,66,.25);
+    padding: .5rem;
+  }
+  
+  .card__tag {
+    font-size: .75rem;
+    padding: .1rem .5rem;
+    border-radius: .25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: .75rem;
+    display: inline-block;
+  }
+  
+  .card__image {
+    width: 100%;
+    margin-bottom: .25rem;
+  }
+  
+  
+  .card__tag_poster {
+    background-color: #c377e0;
+  }
+  
+  
+  .card__tag_title {
+    background-color: #eb5a46;
+  }
+    
+  .card__genre {
+    color: #17394d;
+    margin-bottom: .75rem;
+  }
+  
+
+  

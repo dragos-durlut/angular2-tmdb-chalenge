@@ -1,0 +1,35 @@
+
+
+<app-loader [isLoading]="isLoading"></app-loader>       
+<div  [hidden]="isLoading" class="filter-by-rating" >
+        <img src="../assets/cinema-production.jpg" />
+    Filter by rating
+    &nbsp;
+    <rating-system [initialValue]="[5]" [ratings]="[1,2,3,4,5,6,7,8,9]" (onChange)="filterMoviesByRating($event);">            
+    </rating-system>
+</div>
+        
+<!--<div *ngFor="let movie of filteredMovieModelArray; let i = index">
+    <div><img src="{{baseImageUrl}}{{movie.PosterPath}}" alt="{{movie.Title}} poster image" /> </div>
+    <div>{{movie.Title}}</div>          
+    <div>{{movie.GenreNames.join(", ")}}</div>   
+</div>     -->     
+ 
+
+<section class="wrapper">
+<ul class="column__list">
+    <li class="column__item" *ngFor="let movie of filteredMovieModelArray; let i = index" >           
+        <ul class="card__list">
+            <li class="card__item">
+                <span class="card__tag card__tag_poster">
+                    <img src="{{baseImageUrl}}{{movie.PosterPath}}" alt="{{movie.Title}} poster image" />
+                </span> 
+            </li>
+            <li class="card__item">
+                <span class="card__tag card__tag_title">{{movie.Title}}</span>
+                <h6 class="card__genre">{{movie.GenreNames.join(", ")}}</h6>
+            </li>
+        </ul>
+    </li>
+</ul>
+</section>

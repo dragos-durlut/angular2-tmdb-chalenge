@@ -1,0 +1,3 @@
+<select (change)="onFilterChange($event.target.value)" [value]="initialValue">
+    <option *ngFor="let rating of ratings">{{rating}}</option>
+</select>
